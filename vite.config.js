@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/https://github.com/DudynetsMaksym/news-portal/', 
+  base: '/news-portal/', 
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
