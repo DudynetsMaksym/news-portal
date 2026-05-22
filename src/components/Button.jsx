@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Button = ({text, onClick, type = "primary", disabled = false }) => {
-	const buttonClass = `custom-button ${type}`;
+const MyButton = () => {
+	cosnt [count, setCount] = useState(0);
 
 	return (
-		<button
-			className={buttonClass}
-			onClick={onClick}
-			disabled={disabled}
-		>
-			{text}
+		<button onClick={() => setCount(count + 1)}>
+			Clicks: {count}
 		</button>
 		);
 };
+
+export default MyButton;
